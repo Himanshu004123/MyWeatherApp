@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+hooks:
+  AfterInstall:
+    - location: afterinstall.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: applicationstart.sh
+      timeout: 300
+      runas: root
