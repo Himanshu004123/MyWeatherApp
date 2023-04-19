@@ -9,7 +9,7 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 resource "aws_instance" "Sss1" {
   ami           = "ami-02eb7a4783e7e9317" 
@@ -31,6 +31,6 @@ sudo service codedeploy-agent status
 EOF
 
   tags = {
-    Name = "demoHelloWorldApp"
+    Name = "Server1"
   }
 }
