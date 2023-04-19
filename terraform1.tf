@@ -12,7 +12,7 @@ provider "aws" {
   region = "us-east-1"
 }
 resource "aws_instance" "Sss1" {
-  ami           = "ami-07d3a50bd29811cd1" 
+  ami           = "ami-02eb7a4783e7e9317" 
   instance_type = "t2.micro"
   user_data = <<EOF
 #!/bin/bash 
@@ -31,6 +31,6 @@ sudo service codedeploy-agent status
 EOF
 
   tags = {
-    Name = "JaiHoooo"
+    Name = "demoHelloWorldApp"
   }
 }
